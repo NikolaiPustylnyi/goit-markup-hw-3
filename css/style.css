@@ -1,0 +1,185 @@
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --main-text-color: #212121;
+    --main-link-color-active: #2196F3;
+    --background-main: #2F303A;
+    --background-footer: #2F303A;
+    --logo-first-part-color: #2196F3;
+    --white: #FFF;
+    --p-color: #757575;
+    --background-stuff: #F5F4FA;
+    --button: #2196F3;
+    --button-second-color: #F5F4FA;
+    --button-hover-color: #188CE8;
+
+}
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color)
+}
+
+.logo, .logo-footer{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--main-text-color);
+}
+
+
+.first-logo-part{
+    font-weight: 400;
+    color: var(--logo-first-part-color);
+}
+
+.main-contacts>li a{
+    color: var(--p-color);  
+ }
+
+ 
+
+ .nav a{
+    color: var(--main-text-color);  
+ }
+
+
+.nav a:hover, 
+.nav a:focus,
+.nav a:active{
+    color: var(--main-link-color-active);  
+ }
+
+ .nav a.is-active{
+    color: var(--main-link-color-active); 
+ }
+
+ .nav{
+    font-weight: 500;
+ }
+
+ .main-banner{
+     background-color: var(--background-main);
+ }
+
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.offer-button{
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--button);
+
+}
+
+.offer-button:hover, .offer-button:focus{
+    background-color: var(--button-hover-color);
+}
+
+.our-projects-buttons{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--main-text-color);
+    background-color: var(--button-second-color);
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+.our-projects-buttons:hover, 
+.our-projects-buttons:focus, 
+.our-projects-buttons:active{
+    color: var(--white);
+    background-color: var(--button);
+}
+
+.benefits h3{
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.benefits p{
+    line-height: 24px;
+    color: var(--p-color);
+}
+
+.what-we-do h2, .staff h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.staff{
+    background-color: var(--background-stuff);
+}
+
+.staff h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.staff p{
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--p-color)
+}
+
+.project-examples h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.project-examples p{
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--p-color);
+}
+
+ .footer{
+     background-color: var(--background-footer);
+ }
+
+ .logo-footer{
+    color: var(--white);
+}
+
+.footer-contacts p{
+    font-style: normal;
+    color: var(--white);
+}
+
+.nav-footer a{
+    color: rgba(255, 255, 255, 0.6);
+}
