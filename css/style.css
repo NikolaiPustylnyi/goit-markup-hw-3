@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 li{
     list-style: none;
@@ -31,11 +36,36 @@ body{
     color: var(--main-text-color)
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.flex{
+display: flex;
+padding: 0;
+margin: 0 auto;
+}
+
+.header{
+    height: 80px;
+    justify-content: flex-start;
+    text-align: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo, .logo-footer{
+    display: inline-block;
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     color: var(--main-text-color);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
@@ -44,11 +74,14 @@ body{
     color: var(--logo-first-part-color);
 }
 
-.main-contacts>li a{
-    color: var(--p-color);  
- }
+.main-contacts{
+    margin-left:auto; 
 
- 
+}
+
+.main-contacts>li a{
+    color: var(--p-color);
+ }
 
  .nav a{
     color: var(--main-text-color);  
@@ -67,10 +100,21 @@ body{
 
  .nav{
     font-weight: 500;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
  }
+.nav li:not(:last-child){
+    margin-right: 50px;
+}
 
- .main-banner{
+.main-banner{
      background-color: var(--background-main);
+     height: 600px;
+     padding-top: 200px;
+     padding-bottom: 200px;
+     margin-bottom: 94px;
+     
  }
 
 h1{
@@ -81,6 +125,10 @@ h1{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 696px;
+   
 }
 
 .offer-button{
@@ -94,7 +142,8 @@ h1{
     text-align: center;
     color: var(--white);
     background-color: var(--button);
-
+    display: block;
+    margin: 0 auto;
 }
 
 .offer-button:hover, .offer-button:focus{
@@ -119,16 +168,31 @@ h1{
     background-color: var(--button);
 }
 
+.benefits{
+    margin-bottom: 94px;
+}
+
 .benefits h3{
     font-weight: 700;
     line-height: 16px;
     font-size: 14px;
     text-transform: uppercase;
+    margin: 0 0 10px 0;
+    
 }
 
 .benefits p{
+    margin: 0;
     line-height: 24px;
     color: var(--p-color);
+}
+
+.benefits-items{
+width: 270px;
+}
+
+.benefits-items:not(:last-child){
+margin-right: 30px;
 }
 
 .what-we-do h2, .staff h2{
@@ -136,22 +200,55 @@ h1{
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.what-we-do{
+    margin-bottom: 94px;
+}
+
+.what-we-do-items:not(:last-child){
+    margin-right: 30px;
 }
 
 .staff{
     background-color: var(--background-stuff);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.staff-items:not(:last-child){
+    margin-right: 30px;
+}
+
+.staff-items{
+    text-align: center;
+    padding-bottom: 30px;
+
+    background-color: var(--white);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.staff-img{
+    margin-bottom: 30px;
 }
 
 .staff h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    margin: 0 0 10px 0;
 }
 
 .staff p{
     font-size: 16px;
     line-height: 19px;
-    color: var(--p-color)
+    color: var(--p-color);
+    margin: 0;
 }
 
 .project-examples h3{
