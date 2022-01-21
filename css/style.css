@@ -277,9 +277,15 @@ margin-right: 30px;
 }
 .project-examples-items{
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  
+}
+
+.project-examples-border{
+    padding-top: 20px;
     padding-bottom: 20px;
-    outline: 1px solid var(--border-projecrt-examples-color);
+    border-left: 1px solid var(--border-projecrt-examples-color);
+    border-right: 1px solid var(--border-projecrt-examples-color);
+    border-bottom: 1px solid var(--border-projecrt-examples-color);
 }
 
 .project-examples-items h3{
@@ -293,7 +299,6 @@ margin-right: 30px;
 }
 
 .project-examples-items img{
-    margin-bottom: 20px;
     display: block;
 }
 
