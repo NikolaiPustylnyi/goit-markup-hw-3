@@ -24,6 +24,7 @@ a{
     --button: #2196F3;
     --button-second-color: #F5F4FA;
     --button-hover-color: #188CE8;
+    --border-projecrt-examples-color: #EEE;
 
 }
 
@@ -50,6 +51,7 @@ padding: 0;
 margin: 0 auto;
 }
 
+
 .header{
     height: 80px;
     justify-content: flex-start;
@@ -75,8 +77,7 @@ margin: 0 auto;
 }
 
 .main-contacts{
-    margin-left:auto; 
-
+    margin-left: auto; 
 }
 
 .main-contacts>li a{
@@ -251,6 +252,61 @@ margin-right: 30px;
     margin: 0;
 }
 
+.our-projects{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.nav-project-examples{
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.nav-project-examples li:not(:last-child){
+    margin-right: 8px;
+}
+
+.project-examples{
+    box-sizing: border-box;
+    margin: 0;
+}
+.project-examples-items{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    outline: 1px solid var(--border-projecrt-examples-color);
+}
+
+.project-examples-items h3{
+    margin: 0 0 4px 0;
+    padding-left: 24px;
+}
+
+.project-examples-items p{
+    margin: 0;
+    padding-left: 24px;
+}
+
+.project-examples-items img{
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+
+.project-examples li:nth-child(3n){
+    margin-right: 0;
+}
+
+.project-examples li:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+
+.project-examples{
+    flex-wrap: wrap;
+}
+
 .project-examples h3{
     font-weight: 700;
     font-size: 18px;
@@ -265,18 +321,31 @@ margin-right: 30px;
 }
 
  .footer{
+     padding-top: 60px;
+     padding-bottom: 60px;
      background-color: var(--background-footer);
  }
 
  .logo-footer{
     color: var(--white);
+    margin-bottom: 20px;
 }
 
 .footer-contacts p{
     font-style: normal;
     color: var(--white);
+    margin: 0 0 9px 0;
 }
 
 .nav-footer a{
     color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-footer{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-footer li:not(:last-child){
+    margin-bottom: 9px;
 }
