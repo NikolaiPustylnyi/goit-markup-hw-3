@@ -48,7 +48,6 @@ body{
 .flex{
 display: flex;
 padding: 0;
-margin: 0 auto;
 }
 
 
@@ -206,6 +205,10 @@ margin-right: 30px;
 
 .what-we-do{
     margin-bottom: 94px;
+}
+
+.what-we-do ul, .staff ul{
+    margin: 0;
 }
 
 .what-we-do-items:not(:last-child){
